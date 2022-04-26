@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  rwd img css，可以當作是 CSS Reset 其中一個 */
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* 痊癒 border box */
+**::before,*::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #FFD370;
+}
+.container{
+    max-width: 1028px;
+    max-height: 670px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+}
+
+/*左側 */
+.logo-title{
+    margin-top: 111px;
+}
+.logo-title h1{
+    line-height: 49.15px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Baloo Thambi 2';
+    display:inline;
+}
+.logo-title .logo-img{
+    width: 386px;
+    height: 386px;
+}
+
+/* 右側 */
+.login-information{
+    margin-top: 81px;
+    width: 304px;
+}
+.font-weight{
+    font-weight: 700;
+}
+.login-information h2{
+    font-size: 24px;
+    line-height: 34.75px;
+    margin-bottom: 24px;
+}
+.login-information form{
+    font-family: 'Noto Sans TC';
+    display: flex;
+    flex-direction: column;
+}
+.login-information form label{
+    font-size: 14px;
+    line-height: 20.27px;
+    margin-bottom: 4px;
+}
+.login-information form input{
+    border-radius: 10px;
+    border: none;
+    width: 304px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 23.17;
+    margin-bottom: 16px;
+}
+.login-information .btn{
+    text-align: center;
+
+}
+.login-information .btn button{
+    color:white;
+    background-color: #333333;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    height: 47px;
+    font-size: 16px;
+    line-height: 23.17px;
+    margin: 24px 0 24px 0;
+}
+.login-information .btn a{
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    line-height: 23.17px;
+}
+
+
+@media(max-width:767px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rwd-title{
+        margin-top: 48px;
+    }
+    .rwd-title .logo-img{
+        display: none;
+    }
+    .rwd-bld{
+        margin-top: 21.59px;
+    }
+    .rwd-bld h2{
+        text-align: center;
+    }
+}
