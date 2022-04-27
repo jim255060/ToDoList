@@ -16,6 +16,9 @@ body{
 .logo{
 	width: 386px;
 }
+.logo-text{
+	justify-content: center;
+}
 .logo-text .vector1,.vector2{
 	position:absolute;
 }
