@@ -16,10 +16,6 @@ body{
 .logo{
 	width: 386px;
 }
-.logo-text{
-	justify-content: space-around;
-	align-content: center;
-}
 .logo-text .vector1,.vector2{
 	position:absolute;
 }
@@ -39,7 +35,7 @@ body{
 	font-family: 'Baloo Thambi 2';
 	font-size: 32px;
 	line-height: 49.15px;
-	margin-left: 8.16px;
+	margin-left: 46px;
 }
 
 /* right */
